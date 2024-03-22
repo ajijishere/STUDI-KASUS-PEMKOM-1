@@ -1,0 +1,11 @@
+#Data
+D = float(input("Masukkan Diameter: ")) #Meter
+T = float(input("Masukkan Tinggi: ")) #Meter
+r = D/2 
+phi= 3.141
+
+#Volume Kolam
+v_kolam = phi*(r**2)*T
+
+#Print Hasil
+print("Volume Air yang Dibutuhkan yaitu: ", v_kolam, "Meter Kubik")
