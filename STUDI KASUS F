@@ -1,0 +1,22 @@
+#Kecepatan dan Jarak Tempuh
+kecepatan_a = float(input("Masukkan Kecepatan A: ")) #Km/jam
+waktu_a = float(input("Masukkan Waktu A: ")) #Jam
+kecepatan_b = float(input("Masukkan Kecepatan B: ")) #Km/jam
+waktu_b = float(input("Masukkan Waktu B: ")) #Jam
+kecepatan_c = float(input("Masukkan Kecepatan C: ")) #Km/jam
+waktu_c = float(input("Masukkan Waktu C: ")) #jam
+
+#Jarak ABC
+jarak_a = kecepatan_a * waktu_a
+jarak_b = kecepatan_b * waktu_b
+jarak_c = kecepatan_c * waktu_c
+
+#Total Jarak
+total_jarak = jarak_a + jarak_b + jarak_c
+
+#Konversi Meter
+meter = total_jarak * 1000
+
+#Print Hasil
+print("Total Jarak : ", total_jarak, "Km")
+print("Total Jarak dalam meter", meter, "m")
