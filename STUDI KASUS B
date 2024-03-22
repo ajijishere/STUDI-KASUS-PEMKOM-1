@@ -1,0 +1,14 @@
+#Diameter Lahan
+diameter = float(input("Masukkan Diameter Lahan: ")) #meter
+
+#Ukuran Kayu
+kayu = float(input("Masukkan Ukuran Kayu: ")) #meter
+
+#Keliling Lahan
+lahan = 3.141 * diameter
+
+#Sisa Kayu
+beli = lahan - kayu
+
+#Print Hasil
+print("Jumlah Kayu yang Harus Dibeli: ", beli, "meter")
