@@ -1,0 +1,24 @@
+#Biaya Tetap
+f = float(input("Masukkan Biaya Tetap: $")) #$
+
+#Biaya Variabel per Unit
+tenaga_kerja = float(input("Masukkan Biaya Tenaga Kerja: $"))
+penyimpanan = float(input("Masukkan Biaya Penyimpanan: $"))
+material = float(input("Masukkan Biaya Material: $"))
+
+#Harga Jual Per Unit
+p = float(input("Masukkan Harga Jual per Unit: $"))
+
+#Total Biaya Variabel
+v = tenaga_kerja + penyimpanan + material #$
+print("Total Biaya Variabel: $", v)
+
+#Hitung BEP
+bep_unit = int(f / (p - v))
+
+#Hitung BEP Pendapatan
+bep_pendapatan = int(f / (1-(v / p)))
+
+#Print Hasil
+print("BEP Unit : ", bep_unit, "Unit")
+print("BEP Pendapatan : $",bep_pendapatan)
