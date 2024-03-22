@@ -1,0 +1,19 @@
+#Data Diketahui
+p1 = int(input("Masukkan Harga Awal: ")) #Rupiah
+p2 = int(input("Masukkan Harga Akhir: ")) #Rupiah
+q1 = int(input("Masukkan Permintaan Awal: "))
+q2 = int(input("Masukkan Permintaan Awal: "))
+
+#Perubahan Harga dan Permintaan
+harga = p2 - p1
+permintaan = q2 - q1
+
+#Point Elasticity
+pe = (permintaan / q1)  /(harga / p1)
+
+#Arc Elasticity
+ae = (permintaan / ((q1 + q2) / 2)) / (harga / ((p1 + p2) / 2))
+
+#Print Hasil
+print("Koefisien Elastisitas Harga Permintaan (Satu Titik)", pe)
+print("Koefisien Elastisitas Harga Permintaan (Dua Titik)", ae)
