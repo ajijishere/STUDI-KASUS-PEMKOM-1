@@ -1,0 +1,19 @@
+#Data yang Diketahui
+d = float(input("Masukkan Jumlah Permintaan Tahunan: ")) #Permintaan Tahunan
+s = float(input("Masukkan Biaya Pemesanan: ")) #Biaya Pemesanan
+h = float(input("Masukkan Biaya Penyimpanan: ")) #Biaya Penyimpanan
+t = float(input("Masukkan Jumlah Hari Kerja: ")) #Hari Kerja
+
+# EOQ
+eoq = ((2*d*s)/h)**0.5
+
+# Jumlah Pesanan
+n = d/eoq
+
+#Waktu antara Pesanan
+T = t/n
+
+#Print Hasil
+print("Jumlah Optimal Unit per Pesanan: ", eoq)
+print("Jumlah Pesanan: ", n)
+print("Waktu antara Pesanan: ", T)
