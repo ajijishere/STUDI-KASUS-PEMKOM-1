@@ -1,0 +1,11 @@
+#Suhu Fahrenheit
+f = float(input("Masukkan Suhu dalam Fahrenheit: ")) #°Fahrenheit
+
+#Konversi Suhu50
+
+k = float((f + 459.67)*5/9)
+r = float(4/9*(f-32))
+
+#Print Hasil
+print("Suhu pada Kelvin: ", k, "Kelvin")
+print("Suhu pada Reamur", r, "Reamur")
